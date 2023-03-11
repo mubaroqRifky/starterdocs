@@ -1,0 +1,61 @@
+vue-tailwind-scss
+
+Get started create a project SPA with Vue.js
+npm init vue@latest
+For Vue.js 3 it has built on Vite module builder instead webpack.
+
+Vue Router
+if you forgot add vue router when you create with code as we mention above then you can install separately.
+npm i vue-router
+
+Tailwindcss in your project
+If you want to add css framework such as tailwindcss that makes you easier for styling then you have do something command as we mention in below.
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Sass Pre-Processors
+We can add sass preprocessor like sass or stylus, all you need to do is execute command below and then you have add your main sass file into your main javascript project.
+npm install -D sass
+
+Integrated with Axios
+With Axios you can make your fetching data to the server easier and you can add into your project with code below.
+npm i axios
+
+State Management
+In vue we know a state that can be put into a tag or we can remove or add an element within that state and to make us easier to transfer the data to any elements or component it is going to be tricky.
+So we can add a package that will manage our state, it is called Vuex.
+
+Implementing Code
+To implements all the package that we are going to use, you have to add them into a plugins folder and import it to the main.js.
+
+Project file Structure is going to be like this :
+mkdir -p src/{assets/{css,scss,images,icons},components,views/{auth,errors,layouts,pages},router,store/states,plugins}
+touch src/router/{index,routes}.js
+touch src/store/{index,state,getters,actions,mutations}.js
+touch src/assets/{css/main.css,scss/main.scss}
+
+src
+|---- App.vue
+|---- main.js
+|---- assets
+    |---- css 
+    |---- scss 
+    |---- images 
+    |---- icons 
+|---- components
+|---- plugins
+|---- views
+    |---- auth
+    |---- errors
+    |---- layouts
+    |---- pages
+|---- router
+    |---- index.js
+    |---- routes.js
+|---- store
+    |--- states
+    |--- index.js
+    |--- state.js
+    |--- getters.js
+    |--- actions.js
+    |--- mutations.js

@@ -1,0 +1,65 @@
+.dataTables_wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+}
+.dataTable {
+    grid-column: span 2;
+    tr {
+        &:hover {
+            // background: rgb(243, 243, 243);
+        }
+    }
+    td {
+        padding: 10px;
+    }
+}
+.dataTables_filter,
+.dataTables_paginate {
+    justify-self: flex-end;
+}
+.dataTables_filter,
+.dataTables_length {
+    label {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        input,
+        select {
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 5px 10px;
+            outline: none;
+
+            &:focus {
+                border: 1px solid rgb(146, 212, 209);
+                outline: 2px solid rgb(185, 255, 251);
+                outline-offset: 0;
+            }
+        }
+    }
+}
+.paginate_button {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &.current {
+        background: rgb(146, 212, 209);
+        color: white;
+    }
+
+    &:hover:not(.disabled) {
+        background: rgb(146, 212, 209);
+        color: white;
+        border-color: rgb(146, 212, 209);
+    }
+
+    &.disabled {
+        color: lightgray;
+        cursor: not-allowed;
+    }
+}
