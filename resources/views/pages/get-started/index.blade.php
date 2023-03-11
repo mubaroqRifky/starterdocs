@@ -24,7 +24,7 @@
         </section>
     </div>
     
-    <div class="flex-grow-1 p-4 card position-sticky top-0" style="min-width: 200px">
+    <div class="flex-grow-1 p-4 card position-sticky top-0 nav-panel" style="min-width: 200px">
         <ul class="d-grid">
             <li class="py-2 border-bottom"><a href="#get_started" class="d-block">Get started</a></li>
             <li class="py-2 border-bottom"><a href="#router" class="d-block">Router</a></li>
@@ -40,7 +40,7 @@
 
 @push('scripts_body')
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('.nav-panel a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
